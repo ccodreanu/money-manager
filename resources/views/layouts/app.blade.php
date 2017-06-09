@@ -16,7 +16,13 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-light bg-faded">
-            <a class="navbar-brand" href="{{ route('home') }}">MM</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a class="navbar-brand" href="{{ route('home') }}">MM</a>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         @yield('content')
