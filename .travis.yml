@@ -4,10 +4,8 @@ php:
   - 7.1
 
 before_script:
-  - cp .env.example .env
-  - php artisan key:generate
+  - cp .env.travis .env
   - composer self-update
-  - composer update --no-scripts  
   - composer install --no-interaction
 
 script:
