@@ -2,4 +2,7 @@
 <p align="center">
 	<img src="https://travis-ci.org/picofish/money-manager.svg?branch=master" alt="Build status">
 </p>
-A money manager that is very good to manage your money-management needs 💶
+<p align="center">
+	💶<br>
+	A money manager that is very good to manage your money-management needs
+</p>
