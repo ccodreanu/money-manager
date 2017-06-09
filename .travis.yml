@@ -7,6 +7,7 @@ before_script:
   - cp .env.example .env
   - php artisan key:generate
   - composer self-update
+  - composer update --no-scripts  
   - composer install --no-interaction
 
 script:
