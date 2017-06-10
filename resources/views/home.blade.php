@@ -38,7 +38,7 @@
                     <th scope="row">3</th>
                     <td>Kidney</td>
                     <td>2017-06-03</td>
-                    <td>+ 10.08€</td>
+                    <td>+ 10.09€</td>
                 </tr>
             </table>
         </div>
