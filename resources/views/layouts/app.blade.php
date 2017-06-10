@@ -8,23 +8,35 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Money Manager</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-light bg-faded">
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <a class="navbar-brand" href="{{ route('home') }}">MM</a>
-                    </div>
-                </div>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Money Manager</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="{{ route('home') }}">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="{{ route('income') }}">Income</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="{{ route('expenditure') }}">Expenditure</a>
+                    </li>
+                </ul>
+            </div>
             </div>
         </nav>
-
         @yield('content')
     </div>
 

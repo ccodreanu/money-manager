@@ -15,3 +15,11 @@ Auth::routes();
 Route::get('/', 'HomeController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/income', function () {
+  return view('income');
+})->name('income');
+
+Route::get('/expenditure', function () {
+  return view('expenditure');
+})->name('expenditure');
