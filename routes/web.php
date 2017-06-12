@@ -21,5 +21,8 @@ Route::get('/income', function () {
 })->name('income');
 
 Route::get('/expenditure', function () {
-  return view('expenditure');
+  $user = Auth::user();
+  foreach($user->transactions as $t) {
+    print_r($t->amount);
+  }
 })->name('expenditure');

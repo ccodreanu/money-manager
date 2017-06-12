@@ -22,12 +22,14 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach ($transactions as $transaction)
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Milk and cookies</td>
-                    <td>2017-06-11</td>
-                    <td>- 3.57€</td>
+                    <th scope="row">{{ $transaction->counter }}</th>
+                    <td>{{ $transaction->name }}</td>
+                    <td>{{ $transaction->date }}</td>
+                    <td>{{ $transaction->amount }}</td>
                 </tr>
+                @endforeach
                 <tr>
                     <th scope="row">2</th>
                     <td>Cigarettes</td>
