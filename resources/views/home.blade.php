@@ -10,21 +10,6 @@
         </div>
     </div>
 
-    <form class="row income-form">
-        <div class="col-3">
-            <input type="text" class="form-control" id="inputPassword3" placeholder="Transaction">
-        </div>
-        <div class="col-3">
-            <input type="text" class="form-control" id="inputPassword3" placeholder="Date">
-        </div>
-        <div class="col-3">
-            <input type="text" class="form-control" id="inputPassword3" placeholder="Amount">
-        </div>
-        <div class="col-3">
-            <button type="submit" class="btn btn-primary income-button">Add transaction</button>
-        </div>
-    </form>
-
     <div class="row">
         <div class="col">
             <table class="table table-bordered">
